@@ -1,0 +1,30 @@
+[
+  {
+    "type": "lldb",
+    "request": "launch",
+    "program": "./target/debug/dirsize",
+    "args": ["../ozimage", "--git-ignore"],
+    "reverseDebugging": true,
+    "adapter": "CodeLLDB",
+    "label": "dirsize",
+    "cargo": {
+      "args": ["run", "--", "../ozimage", "--git-ignore"],
+      "env": {
+        "RUSTC_TOOLCHAIN": "/Users/dale8nson/.rustup/toolchains/stable-aarch64-apple-darwin"
+      },
+      "cwd": "/Users/dale8nson/dev/dirsize",
+    },
+      "use_new_terminal": false,
+      "allow_concurrent_runs": false,
+      "reveal": "always",
+      "reveal_target": "dock",
+      "hide": "never",
+      "tags": [],
+      "shell": "system",
+      "show_summary": false,
+      "show_command": true,
+      "sourceLanguages": [
+        "rust"
+      ]
+    },
+]
